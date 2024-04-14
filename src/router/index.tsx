@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Home from '@/pages/Home';
 import About from '@/pages/About';
 
-import HeaderNav from '@/pages/components/HeaderNav';
+import HeaderNav from '@/layout/HeaderNav';
 
 const router = createBrowserRouter([
     {

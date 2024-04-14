@@ -1,6 +1,12 @@
 {
 	"compilerOptions": {
 		"target": "ES2020",
+		"baseUrl": ".",
+		"paths": {
+		  "@/*": [
+			"./src/*"
+		  ]
+		},
 		"useDefineForClassFields": true,
 		"lib": ["ES2020", "DOM", "DOM.Iterable"],
 		"module": "ESNext",
@@ -16,13 +22,9 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"baseUrl": "./",
-		"paths": {
-			"~/*": ["src/*"],
-			"@/*": ["src/*"],
-		},
 		"types": ["vite-plugin-svgr/client"]
 	},
 	"include": ["src"],
+	
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

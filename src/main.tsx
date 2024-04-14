@@ -4,7 +4,7 @@ import { setupStore } from '@/store/store.ts';
 import { Provider } from 'react-redux';
 import { RouterProvider } from 'react-router-dom';
 import router from '@/router/index.tsx';
-import '@/styles/index.css';
+import '@/styles/global.css';
 
 const store = setupStore();
 
